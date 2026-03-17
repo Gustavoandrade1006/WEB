@@ -1,0 +1,45 @@
+.card{
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: lightgray;
+    display: flex;
+    width: 400px;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+
+}
+
+img{
+    width: 300px;
+    
+}
+
+body{
+    background-color: rgb(155, 154, 230);
+    
+
+
+}
+
+
+    
+
+
+
+
+
