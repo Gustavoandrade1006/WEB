@@ -13,6 +13,9 @@ body{
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     padding: 10px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background 0.5s, color 0.5s;
 }
 
 .sidebar{
@@ -29,17 +32,6 @@ body{
 }
 
 
-header {
-    border-radius: 10px;
-    display: flex;
-    padding: 0%;
-    margin: 0%;
-    grid-column: span 12;
-    color: var(--cor-texto);
-    background: var(--cor-fundo);
-    justify-content: space-between;
-    
-}
 
 
 .conteudo{
@@ -94,7 +86,7 @@ nav{
     }
 
     
-    #tema:checked ~ .conteudo {
+    #tema:checked ~ .container {
       --cor-fundo: black;
       --cor-texto: white;
     }
@@ -119,9 +111,26 @@ nav{
 
     }
 
+    header {
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    grid-column: span 12;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    transition: background 0.5s, color 0.5s;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px black;
+    
+}
+
     
     .switch {
+      position: absolute;
       margin-bottom: 20px;
+      right: 20px;
     }
 
     .switch label {
