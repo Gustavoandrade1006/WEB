@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+</head>
+<body>
+
+
+
+    <input type="text" id="Tarefa">
+
+    <select id="Priorid">
+        <option id="Red">Alta</option>
+        <option id="Green">Baixa</option>
+    </select>
+
+    <button onclick = "check()"> Ok </button>
+
+
+
+    <script>
+        function check() {
+            let Trf = document.getElementById("Tarefa").value;
+            let prioridade = document.getElementById("Priorid").value;
+            let p = document.createElement("li")
+            p.innerHTML="Tarefa: "  + Trf + " | Prioridade: " + prioridade;
+            document.body.appendChild(p);
+            alert("Tarefa: "  + Trf + " | Prioridade: " + prioridade)
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
