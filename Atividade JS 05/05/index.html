@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+    <input type="text" id="nome">
+
+    <select id="estado">
+        <option>SP</option>
+        <option>RJ</option>
+    </select>
+
+    <select id="cor">
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Yellow</option>
+        <option>Green</option>
+    </select>
+    
+    <button onclick = "mostar()"> Mostar </button>
+
+
+
+    <script>
+        function mostar() {
+            let valor = document.getElementById("nome").value;
+            let estado = document.getElementById("estado").value;
+            let p = document.createElement("li")
+            p.innerHTML="Nome: "  + valor + " | Estado: " + estado;
+            document.body.appendChild(p);
+            let color = document.getElementById("cor").value;
+            p.style.color = color
+            alert("Nome: " + valor + " | Estado: " + estado + " | Cor: " + color)
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+    
+
+
+
+</body>
+</html>
